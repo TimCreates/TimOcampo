@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflection Paper</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #0d0d0d; /* Dark background for a techno feel */
+            color: #f0f0f0; /* Light text color for contrast */
+            margin: 0;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+            background-color: #1a1a1a; /* Darker background for the container */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 255, 255, 0.3); /* Neon shadow effect */
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: linear-gradient(45deg, rgba(0, 255, 255, 0.1), rgba(0, 0, 0, 0.2));
+            border-radius: 50%;
+            animation: rotate 20s linear infinite;
+            transform: translate(-50%, -50%);
+            z-index: 0; /* Send the gradient behind the content */
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #00ffff; /* Cyan color for the main title */
+            text-shadow: 0 0 15px rgba(0, 255, 255, 0.7); /* Neon effect */
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #00ffff; /* Cyan color for section titles */
+            margin-bottom: 10px;
+            text-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Neon effect */
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #f0f0f0; /* Light gray for paragraph text */
+            margin-bottom: 20px;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Subtle shadow for legibility */
+        }
+
+        hr {
+            border: none;
+            border-bottom: 1px solid #00ffff; /* Cyan line for separation */
+            margin: 20px 0;
+        }
+
+        .python-output {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #1c1c1c; /* Darker background for Python output */
+            border-radius: 5px;
+            color: #f0f0f0; /* Light text color */
+            box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3); /* Neon shadow effect */
+        }
+
+        .python-output h3 {
+            margin: 0 0 10px 0;
+            color: #00ffff; /* Cyan color for Python output title */
+            text-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Neon effect */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Reflection Paper</h1>
+
+        <h2>Data Privacy/Cyber Awareness Campaign</h2>
+        <p><strong>Date:</strong> October 8, 2024</p>
+        <hr>
+
+        <p>
+            The production team behind this event really has me in awe. To say I'm impressed would be an understatement of sorts. 
+            Despite getting off to a somewhat slow start, I thought the Q&A portion was the best part of the presentation. 
+            I realized how important cyber literacy and data privacy were when I raised my hand in response to the speaker's query at this point. 
+
+            We received education on the many data privacy laws that are in force, their goals, and how they guard against hackers, cybercriminals, and identity theft. 
+            These laws are necessary to protect users from those who would misuse or steal their data. 
+            Depending on the seriousness of their offenses, these cybercriminals often face prison terms of six years or more.
+
+        </p>
+        <hr>
+
+        <p>
+            The speaker's delivery was very impressive, in my opinion. Throughout the entire session, I was entranced by his clear and engaging manner. 
+            He emphasized the possible hazards of using the internet, especially in light of the existence of bad actors working in the background. 
+            He did, however, also reassure us that there are preventative steps we can take to stay out of trouble. 
+            He emphasized that cyber authorities serve as our first line of defense, assist in restoring lost data, and emphasized the significance of cyber governance. 
+            and raise public awareness of the possible dangers of using the internet. 
+            It is our duty to understand that the commonplace internet-connected devices we use—like our phones and computers—act as doors to both opportunities and dangers.
+        </p>
+        <hr>
+
+        <p>
+            For me, the campaign was a wonderful experience. The team gave us instructions on how to use our devices to access the internet in an efficient and responsible manner. 
+            Learning had its moments of fun, which added to the enjoyment of studying. 
+            One of the most important lessons I learned was that a hacker's actions could affect the entire world even if they are located in a different nation.
+        </p>
+
+        <h2>Python Output</h2>
+        <py-script>
+            # Sample Python code to demonstrate PyScript
+            topic = "Data Privacy and Cyber Awareness Campaign"
+            date = "2024-10-08"
+            reflection_length = len(
+                """ The production team behind this event really has me in awe. To say I'm impressed would be an understatement of sorts. 
+            Despite getting off to a somewhat slow start, I thought the Q&A portion was the best part of the presentation. 
+            I realized how important cyber literacy and data privacy were when I raised my hand in response to the speaker's query at this point. 
+
+            We received education on the many data privacy laws that are in force, their goals, and how they guard against hackers, cybercriminals, and identity theft. 
+            These laws are necessary to protect users from those who would misuse or steal their data. 
+            Depending on the seriousness of their offenses, these cybercriminals often face prison terms of six years or more."""
+            )
+
+            # Display results
+            print(f"Reflection Topic: {topic}")
+            print(f"Date: {date}")
+            print(f"Reflection Length: {reflection_length} characters")
+        </py-script>
+        
+        <div class="python-output">
+            <h3>Output from Python</h3>
+            <py-output></py-output>
+        </div>
+    
+    </div>
+
+</body>
+</html>
